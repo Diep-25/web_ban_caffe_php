@@ -3,10 +3,11 @@
 	
 	if(ISSET($_POST['save'])){
 		$tenmenu = $_POST['tenmenu'];
+		$thutu = $_POST['thutu'];
 		$parent = $_POST['parent_id'];
 		
 		
-		mysqli_query($mysql, "INSERT INTO `tbl_menu` VALUES('', '$tenmenu', '$parent')") or die(mysqli_error());
+		mysqli_query($mysql, "INSERT INTO `tbl_menu` VALUES('', '$tenmenu','$thutu', '$parent')") or die(mysqli_error());
 		
 		header('location: index.php');
 	}

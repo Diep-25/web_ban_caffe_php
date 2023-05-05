@@ -32,6 +32,10 @@ require '../chung.php';
           <div>
             <input type="text" name ="tenmenu" placeholder="Nhập menu ..." required>
           </div>
+          <label  for="">Thứ tự<sup style="color: red;">*</sup></label>
+          <div>
+            <input type="text" name ="thutu" placeholder="Nhập thứ tự ..." required>
+          </div>
           <label  for="">Chọn menu cha<sup style="color: red;">*</sup></label>
           <div>
             <select name="parent_id" required>
@@ -76,8 +80,11 @@ require '../chung.php';
                     <input type="hidden" name="id_menu" value="<?php echo $fetchUP['id_menu']?>"/>
                     <label  for="">Nhập menu<sup style="color: red;">*</sup></label>
                     <div>
-
                       <input type="text" name="tenmenu" placeholder="Nhập menu ..." value="<?php echo $fetchUP['tenmenu'] ?>" required >
+                    </div>
+                    <label  for="">Thứ tự<sup style="color: red;">*</sup></label>
+                    <div>
+                      <input type="text" value="<?php echo $fetchUP['thutu']?>" name ="thutu" placeholder="Nhập thứ tự ..." required>
                     </div>
                     <label  for="">Chọn menu cha<sup style="color: red;">*</sup></label>
                       <div>
